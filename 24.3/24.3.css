@@ -1,3 +1,25 @@
+/* grid container */
+.grid-container {
+  color: white;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-areas:
+    "header header header header"
+    "sidebar main main sidebar2"
+    "footer footer footer footer";
+}
+
+/* item styling */
+
+.item1,
+.item2,
+.item3,
+.item4,
+.item5 {
+  padding: 1rem;
+  border-radius: 20px;
+}
+
 .item1 {
   grid-area: header;
   background-color: red;
@@ -19,24 +41,7 @@
   background-color: yellow;
 }
 
-.grid-container {
-  color: white;
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-areas:
-    "header header header header"
-    "sidebar main main sidebar2"
-    "footer footer footer footer";
-}
-
-.item1,
-.item2,
-.item3,
-.item4,
-.item5 {
-  padding: 1rem;
-  border-radius: 20px;
-}
+/* medias */
 
 @media (max-width: 768px) {
   .grid-container {
